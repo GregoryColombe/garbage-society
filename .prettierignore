@@ -1,0 +1,7 @@
+# Ignore artifacts:
+node_modules
+.parcel-cache
+dist/*
+!dist/static
+.DS_Store
+.cache/*

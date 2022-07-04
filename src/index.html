@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Garbage Society</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="/static/images/logo.ico" sizes="16x16" />
+	</head>
+	<body>
+		<div id="ui">
+			<div id="ui-home">
+				<img src="/static/images/logo.png" alt="logo Carbage " id="ui-home_logo" />
+				<button id="ui-home_start-button" title="ui-home_start-button">Commencer</button>
+				<ul class="credits">
+					<li>Keny Zachelin</li>
+					<li>Gregory Colombe</li>
+					<li>Brieuc Caillot</li>
+					<li>Emma Rimbert</li>
+					<li>Thiven Minton</li>
+				</ul>
+			</div>
+
+			<div id="ui-introduction">
+				<video id="ui-introduction-video">
+					<source src="/static/videos/intro.mp4" type="video/mp4" />
+				</video>
+				<button id="ui-introduction-skip-btn"></button>
+			</div>
+
+			<div id="ui-key-explane">
+				<div id="ui-key-explane-image"></div>
+				<button id="ui-key-explane-skip-btn">Jouer</button>
+			</div>
+
+			<div id="ui-game">
+				<div>
+					<button class="ui-game-playOrStop">
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" viewBox="0 0 24 24">
+							<path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z" />
+						</svg>
+					</button>
+					<button class="ui-game-soundOrMute">
+						<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff" viewBox="0 0 24 24">
+							<path
+								d="M5 17h-5v-10h5v10zm2-10v10l9 5v-20l-9 5zm17 4h-5v2h5v-2zm-1.584-6.232l-4.332 2.5 1 1.732 4.332-2.5-1-1.732zm1 12.732l-4.332-2.5-1 1.732 4.332 2.5 1-1.732z"
+							/>
+						</svg>
+					</button>
+				</div>
+
+				<div class="score-container-both">
+					<div class="score-container">
+						<div class="score-background">
+							<p class="score score-background-text"></p>
+						</div>
+					</div>
+
+					<div class="lifes-container">
+						<div class="lifes-background lifes-background-3"></div>
+						<div class="lifes-background lifes-background-2"></div>
+						<div class="lifes-background lifes-background-1"></div>
+						<div class="lifes-background lifes-background-0"></div>
+
+						<p id="lifes"></p>
+					</div>
+				</div>
+			</div>
+
+			<div id="ui-cinematique">
+				<div class="ui-cinematique-background ui-cinematique-background-1"></div>
+				<div class="ui-cinematique-background ui-cinematique-background-2"></div>
+
+				<div id="ui-cinematique-container">
+					<div id="ui-cinematique-container-data">
+						<p id="ui-cinematique-label-score">Score</p>
+						<p class="score ui-cinematique-score"></p>
+						<button id="ui-cinematique-skip-btn">Rejouer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<canvas class="webgl"></canvas>
+	</body>
+</html>
